@@ -1,38 +1,70 @@
 .App {
   text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.taskInput {
+  padding-left: 5px;
+  width: 70%;
+  height: 80%;
+  font-size: 20px;
+  border-style: none;
+  border-radius: 2px;
+  box-shadow: 0px 0px 3px #4d6e80;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.taskInput:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px #4d6e80;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button {
+  width: 15%;
+  height: 90%;
+  border-style: none;
+  border-radius: 2px;
+  box-shadow: 0px 0px 3px #4d6e80;
+  color: #454545;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  box-shadow: 0px 0px 5px #1c3441;
+  background: #0b486811;
+}
+
+.addNewDiv {
+  margin: auto;
+  width: 50%;
+  height: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.newTask {
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 15px;
+  width: 50%;
+  min-height: 10px;
+  border-style: none;
+  border-radius: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.taskWords {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.taskButtons {
+  margin: auto;
+  padding-bottom: 10px;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
 }
