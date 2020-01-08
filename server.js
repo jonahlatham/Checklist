@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, '/build')))
 ///////////////////////////////////////////////////////////////
 let id = 0
 let tasks = []
-
+ 
 app.get('/*', (req, res)=>{
     res.sendFile('index.html', {
         root: path.join(__dirname, "build")
