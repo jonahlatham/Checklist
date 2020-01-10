@@ -62,8 +62,8 @@ class App extends Component {
             return (<div className='newTask' style={e.isComplete !== true ? { 'box-shadow': 'inset 0 0 10px #8c2222' } : { 'box-shadow': 'inset 0 0 10px #1d8520' }}>
                 <div className='taskWords'>{e.id} -- {e.task}</div>
                 <div className='taskButtons'>
-                    <button className='button' onClick={() => { this.handleComplete(e.id) }}>Complete</button>
-                    <button className='button' onClick={() => { this.handleDelete(e.id) }}>Delete</button>
+                    <button id='completeButton' className='button' onClick={() => { this.handleComplete(e.id) }}>Complete</button>
+                    <button id='deleteButton' className='button' onClick={() => { this.handleDelete(e.id) }}>Delete</button>
                 </div>
             </div>)
         })
