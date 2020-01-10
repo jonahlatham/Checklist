@@ -9,7 +9,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, '/build')))
-///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////// 
 let id = 0
 let tasks = []
  
@@ -42,7 +42,7 @@ app.put('/api/tasks', (req, res) => {
 
 app.delete('/api/tasks', (req, res) => {
     tasks = tasks.filter((e) => {
-        return e.id === req.query.id
+        return e.id !== Number(req.query.id)
     })
     res.send(tasks)
 })
