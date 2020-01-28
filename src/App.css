@@ -26,6 +26,14 @@
   box-shadow: 0px 0px 3px #4d6e80;
   color: #454545;
 }
+.taskButton{
+  min-width: 35%;
+  height: 105%;
+  border-style: none;
+  border-radius: 2px;
+  box-shadow: 0px 0px 3px #4d6e80;
+  color: #454545;
+}
 
 .button:focus {
   outline: none;
